@@ -1,0 +1,20 @@
+from library import Library
+
+lib = Library()
+
+while True:
+    print("1 Add Book")
+    print("2 Show Books")
+    print("3 Exit")
+
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+        name = input("Enter book name: ")
+        lib.add_book(name)
+
+    elif choice == "2":
+        lib.show_books()
+
+    elif choice == "3":
+        break

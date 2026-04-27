@@ -1,0 +1,9 @@
+from library import Library
+
+lib = Library()
+lib.add_book("Math")
+
+if len(lib.books) == 1:
+    print("Test Passed")
+else:
+    print("Test Failed")
